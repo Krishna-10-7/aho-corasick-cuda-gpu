@@ -22,7 +22,7 @@ npm install aho-corasick-cuda-gpu
 For development installation from the GitHub repository:
 
 ```bash
-git clone https://github.com/yourusername/aho-corasick-cuda-gpu.git
+git clone https://github.com/Krishna-10-7/aho-corasick-cuda-gpu.git
 cd aho-corasick-cuda-gpu
 npm install
 ```
