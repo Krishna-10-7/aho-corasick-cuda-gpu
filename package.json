@@ -1,0 +1,52 @@
+{
+  "name": "aho-corasick-cuda-gpu",
+  "version": "1.0.1",
+  "description": "Aho-Corasick string matching algorithm implementation with GPU acceleration using CUDA",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test_aho_corasick.js",
+    "build": "cmake -B build -S . && cmake --build build --config Release",
+    "install": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "aho-corasick",
+    "string-matching",
+    "gpu",
+    "cuda",
+    "pattern-matching"
+  ],
+  "contributors": [
+    {
+      "name": "krishna pandey"
+    },
+    {
+      "name": "tannu chandola"
+    },
+    {
+      "name": "milan kalkhuriya"
+    },
+    {
+      "name": "ashutosh singh"
+    }
+  ],
+  "files": [
+    "lib/",
+    "src/",
+    "build/Release/",
+    "CMakeLists.txt",
+    "main.cu",
+    "binding.gyp",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^6.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
